@@ -17,9 +17,17 @@ public class ex05 {
 		int data [] []= new int [10] [10] ;
 		for ( int a = 0 ; a < 10 ; a ++ ){
 		for ( int b = 0 ; b < 10 ; b ++ ){
-			  int c =rnd.nextInt(10);
-		System.out.print( c + "\t" );
-	        }
+			  data[a][b] =rnd.nextInt(10);
+		System.out.print( data[a][b] + "\t" );
+	    }
+		System.out.println();
+		}
+		System.out.println();
+		System.out.println("行列轉換後=");
+		for ( int a = 0 ; a < 10 ; a++ ){
+		for ( int b = 0 ; b < 10 ; b++ ){				
+		System.out.print( data[b][a] + "\t" );
+		}
 		System.out.println();
 		}
 	}
